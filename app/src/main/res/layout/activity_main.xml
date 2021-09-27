@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/layout">
+    <!--
+    Színek megadása
+        - Hexadecimális kód # alpha red green blue pl.: #FF00FF00  - zöld
+            - Lehet alpha nélkül is megadni, vagy 1 karakterrel mind2 értéket megadni #0F0
+        - Colors.xml-ben felvett színre hivatkozni @colors/szín_name_attribútuma
+    textColor - betűk színe
+    background - háttér színe
+    -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view"
+        android:text="@string/kiindulo"
+        android:textColor="#000"
+        android:textSize="35sp"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
